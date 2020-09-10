@@ -1,9 +1,78 @@
+
+
+
+
 * {
     padding: 0px;
     margin: 0px;
 }
 
 body {
-    background: rgb(240,247,255);
-background: radial-gradient(circle, rgba(240,247,255,1) 0%, rgba(231,242,255,1) 100%);
+    background: rgb(240, 247, 255);
+    background: radial-gradient(circle, rgba(240, 247, 255, 1) 0%, rgba(231, 242, 255, 1) 100%);
 }
+
+/* Distribucion del grid */
+
+.grid {
+    display: grid;
+    grid-template-areas: "nav nav nav" "new sec sec" "foot foot foot";
+}
+
+/* Navegador i distribucion de los items */
+
+.nav {
+    grid-area: nav;
+    background: rgb(108, 181, 190);
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: stretch;
+}
+
+/* Navegador items */
+
+.nav a {
+    width: 15%;
+    text-align: center;
+    text-decoration: none;
+    color: ivory;
+    background-color: rgb(108, 181, 190);
+    padding: 4px;
+    border-radius: 5px;
+}
+
+.nav a:hover {
+    background-color: beige;
+}
+
+#btnNav {
+    display: none;
+}
+
+/* Seccion principal i distribucion de items */
+
+.pri {
+    grid-area: sec;
+    background-color: red;
+}
+
+/* Items section principal */
+
+/* News distribucion */
+
+.new {
+    grid-area: new;
+    background-color: seagreen;
+}
+
+/* News items */
+
+/* Footer */
+
+.foot {
+    grid-area: foot;
+    background-color: orange;
+}
+
