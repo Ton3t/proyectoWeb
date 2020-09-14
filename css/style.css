@@ -78,6 +78,8 @@ div.content {
   position: relative;
 }
 
+/* Contenedor principal */
+
 .content {
   display: flex;
   width: 75%;
@@ -125,13 +127,13 @@ div.content {
   line-height: 25px;
 }
 
-.info p {
-  margin-bottom: 5px;
-}
 
-.info h2 {
+
+.sub-info {
   text-align: center;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .info img {
@@ -140,9 +142,7 @@ div.content {
   height: auto;
 }
 
-.sub-info {
-  font-weight: bold;
-}
+
 
 .ofer {
   background-color: #4CAF50;
