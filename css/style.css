@@ -49,7 +49,9 @@ div.content {
   height: auto;
 }
 
-
+li.dropdown {
+  align-content: flex-end;
+}
 
 .dropdown-content {
   display: none;
